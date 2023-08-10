@@ -1,19 +1,19 @@
 <div class="container list">
     <p-table #newsGrid [value]="products" styleClass="p-datatable-gridlines" [scrollable]="true" selectionMode="single"
-        [(selection)]="selectedProduct" dataKey="code" [tableStyle]="{ 'min-width': '50rem', 'width':'72vw' }"
+        [(selection)]="selectedProduct" dataKey="code" [tableStyle]="{ 'min-width': '50rem', 'width':'78vw' }"
         scrollHeight="58vh" dataKey="id" [globalFilterFields]="['code', 'name', 'category', 'quantity']">
         <ng-template pTemplate="caption">
             <div class="separador header verticalCenter">
-                <div class="left-content">
+                <div class="left-content margem_borda">
                     <p-button label="Primary" styleClass="p-button-raised"></p-button>
                     <p-button label="Secondary" styleClass="p-button-raised p-button-secondary"></p-button>
                     <p-button label="Success" styleClass="p-button-raised p-button-success"></p-button>
                 </div>
 
-                <div class="right-content">
+                <div class="right-content  margem_borda" style="text-align: right;">
                     <span class="p-input-icon-left ml-auto">
                         <i class="pi pi-search"></i>
-                        <input pInputText #textInput type="text" (input)="newsGrid.filterGlobal(textInput.value, 'contains'
+                        <input style="width: 30vw;" pInputText #textInput type="text" (input)="newsGrid.filterGlobal(textInput.value, 'contains'
                         )" />
                     </span>
                 </div>
@@ -23,7 +23,7 @@
         <!-- <ng-template pTemplate="caption"> Header </ng-template> -->
         <ng-template pTemplate="header">
             <tr>
-                <th style="width: 4rem">s
+                <th style="width: 4rem">.
                     <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
                 </th>
                 <th pSortableColumn="code">Code <p-sortIcon field="code"></p-sortIcon></th>

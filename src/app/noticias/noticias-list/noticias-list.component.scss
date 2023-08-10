@@ -1,12 +1,13 @@
 .list {
     width: 97vw;
-    height: 75vh;
+    height: 77vh;
     background-color: rgb(178, 210, 238);
 }
 
 .header {
     display: flex;
     height: 7vh;
+    width: 77vw;
     background-color: rgb(178, 210, 238);
 }
 
@@ -18,7 +19,8 @@
 }
 
 .right-content {
-    display: flex;
+    // display: flex;
+    width: 60vw;
     text-align: right;
     justify-content: flex-end;
 }
