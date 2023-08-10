@@ -1,0 +1,24 @@
+<div class="center-screen">
+    <p-card header="Encontro de Casais com Cristo" subheader="Acesso a administração do app"
+        [style]="{ width: '360px'  }">
+        <ng-template pTemplate="header">
+            <img style="width: 80%;" alt="Card" src="/assets/images/logo.png" />
+        </ng-template>
+        <div style="display: inline-block;">
+            <label for="idusuario" style="display: flex;">Usuario</label>
+            <span class="p-input-icon-right">
+                <i class="pi pi-search"></i>
+                <input id="idusuario" type="text" pInputText [(ngModel)]="value" />
+            </span>
+            <label for="idsenha" class="inputLogin">Senha</label>
+            <span class="p-input-icon-right">
+                <i class="pi pi-search"></i>
+                <input id="idsenha" type="password" pInputText [(ngModel)]="value" />
+            </span>
+        </div>
+        <hr>
+        <ng-template pTemplate="footer">
+            <p-button label="Entrar" icon="pi pi-check"></p-button>
+        </ng-template>
+    </p-card>
+</div>
