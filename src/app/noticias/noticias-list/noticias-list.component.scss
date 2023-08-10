@@ -1,0 +1,35 @@
+.list {
+    width: 97vw;
+    height: 75vh;
+    background-color: rgb(178, 210, 238);
+}
+
+.header {
+    display: flex;
+    height: 7vh;
+    background-color: rgb(178, 210, 238);
+}
+
+.left-content {
+    display: flex;
+    width: 20vw;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.right-content {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.acoes {
+    width: 89vw;
+    height: 6vh;
+    align-items: center;
+    background-color: rgb(230, 236, 241);
+}
+
+.verticalCenter {
+    align-items: center;
+}

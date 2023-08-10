@@ -4,12 +4,14 @@ import { NoticiasListComponent } from './noticias/noticias-list/noticias-list.co
 import { HomeComponent } from './home/home.component';
 import { NoticiasEditComponent } from './noticias/noticias-edit/noticias-edit.component';
 import { LoginComponent } from './login/login.component';
+import { NoticiasComponent } from './noticias/noticias/noticias.component';
 
 const routes: Routes = [
-  {path: 'list', component: NoticiasListComponent},
-  {path: 'home', component: HomeComponent},
-  {path: 'edit', component: NoticiasEditComponent},
-  {path: '', component: LoginComponent},
+  { path: 'list', component: NoticiasListComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'edit', component: NoticiasEditComponent },
+  { path: 'noticias', component: NoticiasComponent },
+  { path: '', component: LoginComponent },
 ];
 
 @NgModule({
@@ -18,4 +20,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule {
 
- }
+}

@@ -12,8 +12,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
-
+import { TableModule } from 'primeng/table';
 // fim PrimeNg
+import { NoticiasComponent } from './noticias/noticias/noticias.component';
+import { NoticiasHeaderComponent } from './noticias/header/header.component';
+import { NoticiasAcoesComponent } from './noticias/acoes/acoes.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,11 @@ import { InputTextModule } from 'primeng/inputtext';
     LoginComponent,
     NoticiasListComponent,
     NoticiasEditComponent,
-    HomeComponent
+    HomeComponent,
+    NoticiasComponent,
+    NoticiasHeaderComponent,
+    NoticiasAcoesComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -31,6 +38,7 @@ import { InputTextModule } from 'primeng/inputtext';
     CardModule,
     ButtonModule,
     InputTextModule,
+    TableModule,
 
   ],
   providers: [],
