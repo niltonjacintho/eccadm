@@ -8,17 +8,18 @@
             <label for="idusuario" style="display: flex;">Usuario</label>
             <span class="p-input-icon-right">
                 <i class="pi pi-search"></i>
-                <input id="idusuario" type="text" pInputText [(ngModel)]="value" />
+                <input id="idusuario" type="text" pInputText [(ngModel)]="usuario.email" />
             </span>
             <label for="idsenha" class="inputLogin">Senha</label>
             <span class="p-input-icon-right">
                 <i class="pi pi-search"></i>
-                <input id="idsenha" type="password" pInputText [(ngModel)]="value" />
+                <input id="idsenha" type="password" pInputText [(ngModel)]="usuario.senha" />
             </span>
         </div>
         <hr>
         <ng-template pTemplate="footer">
-            <p-button routerLink="noticias" label="Entrar" icon="pi pi-check"></p-button>
+            <p-button (click)="login()" label="Entrar" icon="pi pi-check"></p-button>
         </ng-template>
     </p-card>
+
 </div>

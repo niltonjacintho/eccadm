@@ -106,7 +106,10 @@
       "sourceRoot": "src"
     }
   },
-  "version": 1
+  "version": 1,
+  "cli": {
+    "analytics": "b6f5602e-26a5-4332-8f2a-b37beba3d600"
+  }
 }
 
 // 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

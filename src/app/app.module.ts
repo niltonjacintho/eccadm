@@ -17,6 +17,8 @@ import { TableModule } from 'primeng/table';
 import { NoticiasComponent } from './noticias/noticias/noticias.component';
 import { NoticiasHeaderComponent } from './noticias/header/header.component';
 import { NoticiasAcoesComponent } from './noticias/acoes/acoes.component';
+import { AngularFireModule } from '@angular/fire/compat'
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { NoticiasAcoesComponent } from './noticias/acoes/acoes.component';
 
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebase),
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
